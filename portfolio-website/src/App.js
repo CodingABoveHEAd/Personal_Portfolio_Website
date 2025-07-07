@@ -7,6 +7,8 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
+import StarCanvas from './canvas/Star'
+import Projects from "./components/Projects";
 
 const Body = styled.div`
   width: 100%;
@@ -41,13 +43,16 @@ function app() {
       <BrowserRouter>
         <Navbar />
         <Body>
+        <StarCanvas/>
           <Hero />
           <Wrapper>
             <Skills />
             <Experience />
           </Wrapper>
-
-          <Education />
+          <Projects />
+          <Wrapper>
+            <Education />
+          </Wrapper>
         </Body>
       </BrowserRouter>
     </ThemeProvider>
