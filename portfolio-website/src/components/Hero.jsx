@@ -23,7 +23,6 @@ const HeroCont = styled.div`
   @media screen and (max-width: 768px) {
     padding: 32px 16px;
   }
-
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 const HeroInnerContainer = styled.div`
@@ -39,7 +38,7 @@ const HeroInnerContainer = styled.div`
     flex-direction: column;
   }
 `;
-const leftcont = styled.div`
+const Leftcont = styled.div`
   width: 100%;
   order: 1;
   //background-color: red;
@@ -52,7 +51,7 @@ const leftcont = styled.div`
     gap: 6px;
   }
 `;
-const rightcont = styled.div`
+const Rightcont = styled.div`
   width: 100%;
   order: 2;
   display: flex;
@@ -220,7 +219,7 @@ const Hero = () => {
         </HeroBg>
         <motion.div {...headContainerAnimation}>
           <HeroInnerContainer>
-            <leftcont>
+            <Leftcont>
               <motion.div {...headTextAnimation}>
                 <Title>
                   Hi, I am <br /> {Bio.name}
@@ -242,19 +241,19 @@ const Hero = () => {
               </motion.div>
 
               <motion.div {...headContentAnimation}>
-                <subTitle>{Bio.description}</subTitle>
+                <SubTitle>{Bio.description}</SubTitle>
               </motion.div>
 
               <ResumeButton>Check Resume</ResumeButton>
-            </leftcont>
-            <rightcont>
+            </Leftcont>
+            <Rightcont>
             <motion.div {...headContentAnimation}>
                  <Tilt>
                 <Img src={HeroImg} alt="Niloy Chowdhury" />
               </Tilt>
             </motion.div>
              
-            </rightcont>
+            </Rightcont>
           </HeroInnerContainer>
         </motion.div>
       </HeroCont>
