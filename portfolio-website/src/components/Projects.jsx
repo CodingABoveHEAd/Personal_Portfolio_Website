@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   width: 100%;
   max-width: 1100px;
@@ -24,7 +24,7 @@ const Title = styled.div`
   text-align: center;
   color: ${({ theme }) => theme.text_primary};
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     font-size: 32px;
     margin-top: 12px;
   }
@@ -90,8 +90,11 @@ const Divider = styled.div`
 `;
 
 const CardContainer = styled.div`
-  width: 1.5px;
-  background: ${({ theme }) => theme.primary};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
 `;
 
 const Projects = () => {

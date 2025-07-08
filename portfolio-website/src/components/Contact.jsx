@@ -118,7 +118,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm("serviceid", "templateid", form.current, "tourapiid/tokenid")
+      .sendForm(
+        "service_khp117",
+        "template_k229g9k",
+        form.current,
+        "YtMVP9maol2il3V21"
+      )
       .then(
         (result) => {
           alert("Message Sent");
@@ -130,28 +135,22 @@ const Contact = () => {
       );
   };
   return (
-    <div>
-      <Container id="Contact">
-        <Wrapper>
-          <Title>Contact</Title>
-          <Desc>
-            Feel free to reach out to me for any questions or opportunities!
-          </Desc>
-          <ContactForm onSubmit={handleSubmit}>
-            <ContactTitle>Email Me </ContactTitle>
-            <ContactInput placeholder="Your Email" name="from_email" />
-            <ContactInput placeholder="Your Name" name="from_name" />
-            <ContactInput placeholder="Subject" name="subject" />
-            <ContactInputMessage
-              placeholder="Messsage"
-              name="message"
-              rows={4}
-            />
-            <ContactButton type="submit" value="send" />
-          </ContactForm>
-        </Wrapper>
-      </Container>
-    </div>
+    <Container id="Contact">
+      <Wrapper>
+        <Title>Contact</Title>
+        <Desc>
+          Feel free to reach out to me for any questions or opportunities!
+        </Desc>
+        <ContactForm onSubmit={handleSubmit}>
+          <ContactTitle>Email Me 🚀</ContactTitle>
+          <ContactInput placeholder="Your Email" name="from_email" />
+          <ContactInput placeholder="Your Name" name="from_name" />
+          <ContactInput placeholder="Subject" name="subject" />
+          <ContactInputMessage placeholder="Messsage" name="message" rows={4} />
+          <ContactButton type="submit" value="Send" />
+        </ContactForm>
+      </Wrapper>
+    </Container>
   );
 };
 

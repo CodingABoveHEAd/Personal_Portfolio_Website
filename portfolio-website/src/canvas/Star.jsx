@@ -1,15 +1,17 @@
 import React, { useState, useRef, Suspense } from "react";
 import styled from "styled-components";
-import { useFrame, Canvas } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random";
 
 
 const StyledStarCanvasWrapper = styled.div`
-  width: 100%;
-  height: auto;
-  position: absolute;
+   position: fixed;
   inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
   `;
 
 const Stars = (props) => {

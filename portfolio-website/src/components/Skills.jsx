@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1100px;
@@ -33,7 +33,7 @@ const Title = styled.div`
   text-align: center;
   color: ${({ theme }) => theme.text_primary};
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     font-size: 32px;
     margin-top: 12px;
   }
@@ -51,6 +51,9 @@ const Desc = styled.div`
 `;
 
 const SkillsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 20px;
   justify-content: center;
   gap: 50px;
@@ -66,21 +69,28 @@ const Skill = styled.div`
   padding: 18px 36px;
 
   @media screen and (max-width: 768px) {
+    max-width: 400px;
+    padding: 10px 36px;
+  }
+  @media screen and (max-width: 500px) {
     max-width: 330px;
     padding: 10px 36px;
   }
+
 `;
 
 const SkillTitle = styled.div`
   font-size: 28px;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+  text-align: center;
   color: ${({ theme }) => theme.text_primary};
 `;
 
 const SkillList = styled.ul`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 20px;
 `;
@@ -129,6 +139,7 @@ const Skills = () => {
                   {skill.skills.map((item, index2) => (
                     <SkillItem key={index2}>
                       <SkillImage src={item.image} />
+                      {item.name}
                     </SkillItem>
                   ))}
                 </SkillList>
