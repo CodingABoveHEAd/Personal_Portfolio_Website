@@ -60,9 +60,9 @@ const Experience = () => {
     <div>
       <Container id="Experience">
         <Wrapper>
-          <Title>Experience</Title>
+          <Title>Practical Exposure</Title>
             <Desc>
-            My work experience as a software engineer and working companies and projects.
+            Simulated real-world development environments with version control (Git), REST API design, and deployment workflows with competitive mindset.
             </Desc>
           <VerticalTimeline>
             {experiences.map((experience,index1)=>(

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import styled, { useTheme } from "styled-components";
 import { Link as linkr } from "react-router-dom";
 import { Bio } from "../data/constants";
-import MenuRounded from '@mui/icons-material/MenuRounded';
-
+import MenuRounded from "@mui/icons-material/MenuRounded";
 
 const NavbarContainer = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -15,7 +14,7 @@ const NavbarContainer = styled.div`
   width: 100%;
   max-width: 1200px;
   padding: 0 24px;
-   z-index: 5000; 
+  z-index: 5000;
 `;
 
 const NavLogo = styled(linkr)`
@@ -35,7 +34,7 @@ const NavItems = styled.ul`
   gap: 32px;
   padding: 0 6px;
   list-style: none;
-   z-index: 5000; 
+  z-index: 5000;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -47,7 +46,7 @@ const NavLink = styled.a`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-z-index: 5000; 
+  z-index: 5000;
   &:hover {
     color: ${({ theme }) => theme.primary};
   }
@@ -60,7 +59,7 @@ const ButtonContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
   padding: 0 6px;
-   z-index: 5000; 
+  z-index: 5000;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -93,7 +92,7 @@ const Nav = styled.nav`
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  z-index: 5000; 
+  z-index: 5000;
 `;
 
 const MobileIcon = styled.div`
@@ -132,7 +131,7 @@ const MobileMenu = styled.ul`
 
 const Navbar = () => {
   const [open, setopen] = useState(false);
-  const theme=useTheme();
+  const theme = useTheme();
   return (
     <Nav>
       <NavbarContainer>
@@ -151,17 +150,31 @@ const Navbar = () => {
 
         {open && (
           <MobileMenu open>
-            <NavLink  onClick={() => setopen(!open)} href="#About">About</NavLink>
-            <NavLink  onClick={() => setopen(!open)} href="#Skills">Skills</NavLink>
-            <NavLink  onClick={() => setopen(!open)} href="#Experience">Experience</NavLink>
-            <NavLink  onClick={() => setopen(!open)} href="#Projects">Projects</NavLink>
-            <NavLink  onClick={() => setopen(!open)} href="#Education">Education</NavLink>
-             <GithubButton href={Bio.github} target="_Blank" style={{ 
+            <NavLink onClick={() => setopen(!open)} href="#About">
+              About
+            </NavLink>
+            <NavLink onClick={() => setopen(!open)} href="#Skills">
+              Skills
+            </NavLink>
+            <NavLink onClick={() => setopen(!open)} href="#Experience">
+              Experience
+            </NavLink>
+            <NavLink onClick={() => setopen(!open)} href="#Projects">
+              Projects
+            </NavLink>
+            <NavLink onClick={() => setopen(!open)} href="#Education">
+              Education
+            </NavLink>
+            <GithubButton
+              href={Bio.github}
+              target="_Blank"
+              style={{
                 background: theme.primary,
                 color: theme.text_primary,
-              }}>
-            Github Profile
-          </GithubButton>
+              }}
+            >
+              Github Profile
+            </GithubButton>
           </MobileMenu>
         )}
 
