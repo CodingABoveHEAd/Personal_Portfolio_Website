@@ -7,7 +7,7 @@ import {
   Instagram,
   Telegram,
 } from "@mui/icons-material"; // Make sure these icons are installed
-import { Bio } from "../data/constants"; // Ensure this is correctly imported or defined
+import { Bio } from "../data/constants";
 
 const FooterContainer = styled.div`
   width: 100%;

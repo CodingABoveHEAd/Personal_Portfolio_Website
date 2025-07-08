@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { skills } from "../data/constants";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 
 const Container = styled.div`
   display: flex;
@@ -56,64 +56,61 @@ const SkillsContainer = styled.div`
   gap: 50px;
 `;
 
-
 const Skill = styled.div`
-width:100%;
-max-width:500px;
-background-color: rgba(17,25,40, 0.8);
-border: 1px solid rgba(255,255,255,.125);
-box-shadow: rgba(23,92,230,.15) 0px 4px 24px;
-border-radius: 16px;
-padding:18px 36px;
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(17, 25, 40, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  border-radius: 16px;
+  padding: 18px 36px;
 
-@media screen and (max-width: 768px) {
-    max-width:330px;
-    padding:10px 36px;
-}
+  @media screen and (max-width: 768px) {
+    max-width: 330px;
+    padding: 10px 36px;
+  }
 `;
 
 const SkillTitle = styled.div`
-font-size: 28px;
-font-weight: 600;
-margin-bottom: 12px;
-color: ${({ theme }) => theme.text_primary};
-
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: ${({ theme }) => theme.text_primary};
 `;
 
 const SkillList = styled.ul`
-display: flex;
-justify-content: center;
-gap: 12px;
-margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
 `;
 
 const SkillItem = styled.li`
-font-size: 16px;
-font-weight: 400px;
-color: ${({ theme }) => theme.text_primary+80};
-border:1px solid ${({ theme }) => theme.text_primary+80};
-border-radius: 12px;
-padding:12px 16px;
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 8px;
+  font-size: 16px;
+  font-weight: 400px;
+  color: ${({ theme }) => theme.text_primary + 80};
+  border: 1px solid ${({ theme }) => theme.text_primary + 80};
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 14px;
-    padding:8px 12px;
-}
+    padding: 8px 12px;
+  }
 
-@media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     font-size: 14px;
-    padding:6px 12px;
-}
+    padding: 6px 12px;
+  }
 `;
 
 const SkillImage = styled.img`
-width:24px;
-height:24px;
-
+  width: 24px;
+  height: 24px;
 `;
 
 const Skills = () => {
@@ -125,18 +122,18 @@ const Skills = () => {
 
         <SkillsContainer>
           {skills.map((skill, index) => (
-            <Tilt>
-                <Skill key={index}>
-              <SkillTitle>{skill.title}</SkillTitle>
-              <SkillList>{skill.skills.map((item, index2) => (
-           <SkillItem key={index2}>
-            <SkillImage src={item.image} />
-           </SkillItem>
-              ))}
-              </SkillList>
-            </Skill>
+            <Tilt key={index}>
+              <Skill>
+                <SkillTitle>{skill.title}</SkillTitle>
+                <SkillList>
+                  {skill.skills.map((item, index2) => (
+                    <SkillItem key={index2}>
+                      <SkillImage src={item.image} />
+                    </SkillItem>
+                  ))}
+                </SkillList>
+              </Skill>
             </Tilt>
-            
           ))}
         </SkillsContainer>
       </Wrapper>

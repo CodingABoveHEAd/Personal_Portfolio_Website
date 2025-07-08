@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import styled, { useTheme } from "styled-components";
 import { Link as linkr } from "react-router-dom";
 import { Bio } from "../data/constants";
-import { MenuIcon, MenuRounded } from "@mui/icons-material/Menu";
+import MenuIcon from '@mui/icons-material/Menu';
+import MenuRounded from '@mui/icons-material/MenuRounded';
+
 
 
 const NavbarContainer = styled.div`
@@ -95,10 +97,11 @@ const Nav = styled.nav`
 const MobileIcon = styled.div`
   color: ${({ theme }) => theme.text_primary};
   height: 100%;
-  display: flex;
-  align-items: center;
-  @media screen and (min-width: 768px) {
-    display: block;
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
   }
 `;
 
@@ -149,8 +152,8 @@ const Navbar = () => {
             <NavLink  onClick={() => setopen(!open)} href="#About">About</NavLink>
             <NavLink  onClick={() => setopen(!open)} href="#Skills">Skills</NavLink>
             <NavLink  onClick={() => setopen(!open)} href="#Experience">Experience</NavLink>
-            <NavLink  onClick={() => setopen(!open)} href="Projects">Projects</NavLink>
-            <NavLink  onClick={() => setopen(!open)} href="Education">Education</NavLink>
+            <NavLink  onClick={() => setopen(!open)} href="#Projects">Projects</NavLink>
+            <NavLink  onClick={() => setopen(!open)} href="#Education">Education</NavLink>
              <GithubButton href={Bio.github} target="_Blank" style={{ 
                 background: theme.primary,
                 color: theme.text_primary,

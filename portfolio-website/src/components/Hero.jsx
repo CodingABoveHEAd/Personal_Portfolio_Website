@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Bio } from "../data/constants";
-import Typewriter from "typwriter-effect";
-import HeroImg from "../assets/hero.png"; // Ensure you have the correct path to your image
+import Typewriter from "typewriter-effect";
+import HeroImg from '../images/photo_2025-07-08_11-31-05.jpg' // Ensure you have the correct path to your image
 import HeroBgAnimation from "./HeroBgAnimation";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { headContainerAnimation, headContentAnimation, headTextAnimation } from "../utils/motion";
 import StarCanvas from "../canvas/Star"; // Ensure you have the correct path to your Star component
@@ -229,7 +229,7 @@ const Hero = () => {
                   <Span>
                     <Typewriter
                       options={{
-                        strings: Bio.skills,
+                        strings: Bio.roles,
                         autoStart: true,
                         loop: true,
                         // delay: 75,
