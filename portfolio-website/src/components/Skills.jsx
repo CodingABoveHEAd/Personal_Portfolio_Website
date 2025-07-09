@@ -10,6 +10,7 @@ const Container = styled.div`
   z-index: 1;
   justify-content: center;
   align-items: center;
+  
 `;
 
 const Wrapper = styled.div`
@@ -21,7 +22,7 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1100px;
   gap: 12px;
-
+margin-top:100px;
   @media screen and (max-width: 960px) {
     flex-direction: column;
   }

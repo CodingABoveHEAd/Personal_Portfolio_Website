@@ -18,13 +18,13 @@ const NavbarContainer = styled.div`
 `;
 
 const NavLogo = styled(linkr)`
-  padding: 0 6px;
   text-decoration: none;
-  color: inherit;
-  width: 80%;
-  font-weight: 500;
-  font-size: 18px;
+  color: ${({ theme }) => theme.text_primary};
+  font-weight: 600;
+  font-size: 22px;
+  white-space: nowrap;
 `;
+
 
 const NavItems = styled.ul`
   width: 100%;
@@ -35,6 +35,7 @@ const NavItems = styled.ul`
   padding: 0 6px;
   list-style: none;
   z-index: 5000;
+  margin-left: 53px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -53,7 +54,7 @@ const NavLink = styled.a`
 `;
 
 const ButtonContainer = styled.div`
-  width: 80%;
+  width: 34%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -135,7 +136,7 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">Geek</NavLogo>
+        <NavLogo to="/">Niloy</NavLogo>
         <MobileIcon onClick={() => setopen(!open)}>
           <MenuRounded style={{ color: "inherit" }} />
         </MobileIcon>

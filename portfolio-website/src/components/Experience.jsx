@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1100px;
   gap: 12px;
-
+margin-top: 100px;
   @media screen and (max-width: 960px) {
     flex-direction: column;
   }
@@ -60,7 +60,7 @@ const Experience = () => {
     <div>
       <Container id="Experience">
         <Wrapper>
-          <Title>Practical Exposure</Title>
+          <Title>Experience</Title>
             <Desc>
             Simulated real-world development environments with version control (Git), REST API design, and deployment workflows with competitive mindset.
             </Desc>

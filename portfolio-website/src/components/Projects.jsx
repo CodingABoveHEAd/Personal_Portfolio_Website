@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1100px;
@@ -105,8 +105,8 @@ const Projects = () => {
         <Title>Projects</Title>
         <Desc>
           I have worked on a wide range of projects. From web applications to
-          automation tools, each project showcases my passion for building
-          efficient and user-friendly solutions. Here are some of my projects
+          android application each project showcases my passion for building
+          efficient and user-friendly solutions. Here are some of my projects...
         </Desc>
         <ToggleButtonGroup>
           <ToggleButton
@@ -120,7 +120,7 @@ const Projects = () => {
             active={toggle === "web app"}
             onClick={() => setToggle("web app")}
           >
-            WEB APP'S
+            WEB Development
           </ToggleButton>
           <Divider />
           <ToggleButton
@@ -131,13 +131,21 @@ const Projects = () => {
           </ToggleButton>
           <Divider />
           <ToggleButton
-            active={toggle === "machine learning"}
-            onClick={() => setToggle("machine learning")}
+            active={toggle === "Wordpress Website"}
+            onClick={() => setToggle("Wordpress Website")}
           >
-            machine Learning
+            Wordpress Website
+          </ToggleButton>
+          <Divider />
+          <ToggleButton
+            active={toggle === "Academic Projects"}
+            onClick={() => setToggle("Academic Projects")}
+          >
+            Academic Projects
           </ToggleButton>
         </ToggleButtonGroup>
-       <CardContainer>
+
+        <CardContainer>
           {toggle === "all" &&
             projects.map((project) => <ProjectCard project={project} />)}
           {projects

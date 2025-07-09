@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1100px;
   gap: 12px;
-
+  margin-top: 100px;
   @media screen and (max-width: 960px) {
     flex-direction: column;
   }
@@ -61,8 +61,8 @@ const Education = () => {
         <Wrapper>
           <Title>Education</Title>
           <Desc>
-            My education has been a journey of self-discovery educatoinal
-            details are as follows
+          My educational journey has been one of growth, exploration, and self-discovery. 
+          The key milestones are outlined below
           </Desc>
           <VerticalTimeline>
             {education.map((education, index1) => (

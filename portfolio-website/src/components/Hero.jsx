@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../data/constants";
 import Typewriter from "typewriter-effect";
-import HeroImg from '../images/photo_2025-07-08_11-31-05.jpg' // Ensure you have the correct path to your image
+import HeroImg from '../images/IMG_20250709_152155.jpg' // Ensure you have the correct path to your image
 import HeroBgAnimation from "./HeroBgAnimation";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
@@ -133,51 +133,66 @@ const SubTitle = styled.div`
 `;
 
 const ResumeButton = styled.a`
-  -webkit-appearance: button;
-  -moz-appearance: button;
+background-size: 200% 200%;
+animation: gradientShift 5s ease infinite;
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
   appearance: button;
   text-decoration: none;
-cursor: pointer;
+  cursor: pointer;
   width: 95%;
   max-width: 300px;
   text-align: center;
   padding: 16px 0;
-
-  background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  background: -moz-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
-  );
-  box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
   border-radius: 50px;
   font-weight: 600;
   font-size: 20px;
+  color: white;
+  background: linear-gradient(225deg, #7f00ff, #e100ff);
+  box-shadow: 0 8px 20px rgba(129, 51, 255, 0.3),
+              0 4px 10px rgba(255, 0, 255, 0.2);
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 
-     &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634;
-    filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
-    color: white;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.15), transparent 40%);
+    transform: rotate(25deg);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:hover {
+    transform: scale(1.06);
+    box-shadow: 0 10px 25px rgba(129, 51, 255, 0.4),
+                0 6px 12px rgba(255, 0, 255, 0.25);
+  }
+
+  @media (max-width: 640px) {
+    padding: 12px 0;
+    font-size: 18px;
+  }
 `;
+
+
+
 
 const Img = styled.img`
   border-radius: 50%;
@@ -247,7 +262,7 @@ const Hero = () => {
                 <SubTitle>{Bio.description}</SubTitle>
               </motion.div>
 
-              <ResumeButton>Check Resume</ResumeButton>
+              <ResumeButton href="./resume/Niloy_Chowdhury_Resume.pdf" target="_blank">Check Resume</ResumeButton>
             </Leftcont>
             <Rightcont>
             <motion.div {...headContentAnimation}>

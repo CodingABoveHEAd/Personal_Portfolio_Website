@@ -1,22 +1,21 @@
 export const Bio = {
   name: "Niloy Chowdhury",
   roles: [
-    "Full Stack Web-Developer",
+    "Student",
+    "Web-Developer",
     "Android Developer",
     "WordPress Developer",
     "UI/UX Designer",
-    "Student",
-    "Programmer",
+    "Competitive-Programmer",
   ],
   description:
     "I am a motivated and adaptable individual with a strong drive to learn and grow. Always eager to take on new challenges, I strive to deliver high-quality results through dedication and creativity. With a positive mindset and a passion for continuous improvement, I'm committed to making meaningful contributions and achieving impactful outcomes.",
-  resume:
-    "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",
-  linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-  whatsapp: "https://twitter.com/RishavChanda",
-  insta: "https://www.instagram.com/rishav_chanda/",
-  facebook: "https://www.facebook.com/rishav.chanda.165/",
-  telegram: "https://www.facebook.com/rishav.chanda.165/",
+
+  insta: "https://www.instagram.com/niloychowdhury03/",
+  facebook: "https://www.facebook.com/nilaya.caudhuri.855869",
+  telegram: "https://t.me/niloynishan",
+  github: "https://github.com/CodingABoveHEAd",
+  whatsapp: "https://wa.me/01627242435",
 };
 
 export const skills = [
@@ -219,6 +218,11 @@ export const skills = [
     title: "Content Management System",
     skills: [
       {
+        name: "Xampp",
+        image:
+          "https://w7.pngwing.com/pngs/952/732/png-transparent-xampp-full-logo-tech-companies-thumbnail.png",
+      },
+      {
         name: "Wordpress",
         image:
           "https://toppng.com/uploads/preview/wordpress-logo-png-file-11662328823hnwldnbjf4.png",
@@ -294,14 +298,9 @@ export const experiences = [
     role: "Problem Solving",
     company: "Codeforces",
     date: "2022-Present",
-    desc: "Solved over 733 algorithmic problems on Codeforces, strengthening problem-solving, logical thinking, and algorithm design skillsSolved over 733 algorithmic problems on Codeforces, gaining extensive hands-on experience in data structures, algorithms, and time-complexity optimization. This consistent practice has strengthened my analytical thinking, debugging ability, and problem-solving mindset—skills that are directly applicable to real-world software development and technical interviews.",
-    skills: [
-      "C",
-      "C++",
-      "DSA",
-      "STL",
-      "Number-Theory",
-    ],
+    desc: "Solved over 700+ algorithmic problems on Codeforces, strengthening problem-solving skill, logical thinking, and algorithm design skills, gaining extensive hands-on experience in data structures, algorithms, and time-complexity optimization. This consistent practice has strengthened my analytical thinking, debugging ability, and problem-solving mindset—skills that are directly applicable to real-world software development and technical interviews.",
+    skills: ["C", "C++", "DSA", "STL", "Number-Theory"],
+    profile: "https://codeforces.com/profile/niloychowdhury",
     doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
   },
   {
@@ -320,8 +319,9 @@ export const experiences = [
       "HTML",
       "CSS",
       "JavaScript",
-      "PHP"
+      "PHP",
     ],
+    profile: "https://www.fiverr.com/sellers/code_with_niloy/",
     doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1696514649120.jpeg?alt=media&token=e7f6757b-edfa-4138-a692-d6709eeef3e2",
   },
   {
@@ -338,7 +338,7 @@ export const experiences = [
       "Woocommerce",
       "Plugin-Development",
       "Theme-Customization",
-      "Wordpress-Web-hosting"
+      "Wordpress-Web-hosting",
     ],
     doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
   },
@@ -351,7 +351,7 @@ export const experiences = [
     desc: "I have designed and developed 3+ full-stack web applications using the MERN stack and firebase, focusing on responsive UI, API integration, authentication,authorization and deployment. This hands-on experience has strengthened my interest in building more robust and scalable full-stack solutions.",
     skills: [
       "ReactJS",
-       "NodeJs",
+      "NodeJs",
       "ExpressJs",
       "Context api",
       "Material UI",
@@ -370,15 +370,9 @@ export const experiences = [
     company: "Mobile Applications",
     date: "July 2024-January 2025",
     desc: "I have designed and developed Android applications using Android,Java and XML in one of my undergraduate courss.It mainly focuses on clean UI design, local and remote data handling, user authentication, and performance optimization. This hands-on experience has deepened my interest in creating robust, user-friendly, and scalable mobile applications for the Android platform.",
-    skills: [
-      "Android",
-       "Java",
-      "Android-Studio",
-      "Firebase",
-      "VS-Code-Editor"
-    ],
+    skills: ["Android", "Java", "Android-Studio", "Firebase", "VS-Code-Editor"],
     doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1691181448873.jpeg?alt=media&token=ee85eb8f-7247-43cd-9a1d-ce9f58ea62a6",
-  }
+  },
 ];
 
 export const education = [
@@ -414,213 +408,170 @@ export const education = [
 export const projects = [
   {
     id: 11,
-    title: "DecisionHub",
-    date: "Jan 2024 - Dec 2023",
+    title: "Chatnest Chat Application",
+    date: "May 2025",
     description:
-      "A Rule Builder application “Decision Hub” that empowers Business Analysts to create, save, and visualize decision strategies. Provide a no-code rule writing experience and visual representation to test these rules in real-time and observe the calculations at each step.",
-    image:
-      "https://github.com/rishavchanda/DecisionHub/raw/master/assets/testRule.jpg",
+      "Built a responsive real-time chat application using the MERN stack and Socket.IO. Features include admin panel,user registration and login, one-to-one messaging, message read status, and user authentication with JWT. Efficient WebSocket integration ensures low-latency communication, while MongoDB stores chat history securely. Deployed for seamless performance across devices.",
+    image: "./images/Screenshot 2025-07-09 111344.png",
     tags: [
-      "React Js",
-      "PostgressSQL",
+      "Ejs",
       "Node Js",
       "Express Js",
-      "Redux",
-      "React Flow",
+      "Socket.io",
+      "Mongodb",
+      "JWT Auth",
+      "Mogodb Atlas",
+      "VS code",
+      "render",
     ],
     category: "web app",
-    github: "https://github.com/rishavchanda/DecisionHub",
-    webapp: "https://decisionhub.netlify.app/",
+    github: "https://github.com/CodingABoveHEAd/Chat-Application",
+    webapp: "https://chatnest-chat-application-niloy.onrender.com/login",
   },
   {
     id: 9,
-    title: "Trackify",
-    date: "Jun 2023 - Jul 2023",
+    title: "KenaBechaBd Supershop Website",
+    date: "May 2025",
     description:
-      "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+      "Designed and developed a full-featured e-commerce Supershop website using the MERN stack. The application includes a dynamic admin panel for managing products, categories, users, and orders. Users can browse products, add to cart, place orders, and manage their accounts. Secure user authentication with JWT, real-time admin updates, and MongoDB database integration ensure smooth and scalable operations. Fully responsive,optimized and deployed on render for the accessibility across all devices.",
+    image: "./images/Screenshot 2025-07-09 115016.png",
     tags: [
-      "Docker",
-      "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
-      "CI/CD",
       "React Js",
-      "MongoDb",
       "Node Js",
       "Express Js",
-      "Redux",
+      "MongoDb",
+      "MongoDb Atlas",
+      "JWT Auth",
+      "Context Api",
+      "Render",
+      "Ecommerce",
+      "FullStack",
     ],
     category: "web app",
-    github: "https://github.com/rishavchanda/Trackify",
-    webapp: "https://trackify-management.netlify.app/",
+    github: "https://github.com/CodingABoveHEAd/KenaBechaBD_super_shop_website",
+    webapp: "https://kenabechabd-supershop-website-htcr.onrender.com/",
   },
   {
     id: 0,
-    title: "Podstream",
-    date: "Apr 2023 - May 2023",
+    title: "Realtime Quiz Application",
+    date: "Apr 2025",
     description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Podstream",
-    webapp: "https://podstream.netlify.app/",
-    member: [
-      {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
+      "Developed a responsive quiz application using React for the frontend and Firebase for authentication and real-time database. Users can register, login, and take quizes across various categories. Quiz data is stored and fetched dynamically from Firebase, and user progress or scores can be tracked. The app ensures a smooth user experience with secure login, instant feedback,infinity scroll and responsive design for all devices.",
+    image: "./images/Screenshot 2025-07-09 120525.png",
+    tags: [
+      "React Js",
+      "Firebase Auth",
+      "Firebase Database",
+      "Infinity Scroll",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "render",
     ],
+    category: "web app",
+    github: "https://github.com/CodingABoveHEAd/Quiz-Application-React",
+    webapp: "https://quiz-application-react-niloy.onrender.com/",
   },
   {
     id: 1,
-    title: "Vexa",
-    date: "Oct 2022 - Jan 2023",
+    title: "Personal Portfolio Website",
+    date: "July 2025",
     description:
-      "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
-    tags: [
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
-      "NodeMailer",
-    ],
+      "Designed and developed an interactive personal portfolio website using React, Framer Motion for smooth animations, and Three.js for 3D visual elements. The site showcases projects, skills, and contact information with a modern UI/UX design. Fully responsive and optimized for performance, providing an engaging and immersive experience across all devices.",
+    image: "./images/Screenshot 2025-07-09 165516.png",
+    tags: ["React Js", "Three Js", "Motion Js", "Email Js", "Render"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Project-Management-App",
+    github: "https://github.com/CodingABoveHEAd/Personal_Portfolio_Website",
     webapp: "https://vexa-app.netlify.app/",
   },
   {
     id: 2,
-    title: "Brain Tumor Detection",
-    date: "Jan 2023 - Mar 2023",
+    title: "BataBD Clone Website using CMS",
+    date: "June 2025 - July 2025",
     description:
-      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
-    image:
-      "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-    category: "machine learning",
-    github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-    webapp: "https://brain-tumor.netlify.app/",
-    member: [
-      {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
+      "Recreated the BataBD eCommerce website using WordPress and the Divi theme builder, replicating its design, layout, and product presentation using Woocommerce. Implemented responsive product cards, custom carousel sliders, brand filters, color swatches, and wishlist integration. The site is fully responsive, optimized for performance, and designed to closely match the original BataBD user experience.",
+    image: "./images/Screenshot 2025-07-09 122238.png",
+    tags: [
+      "Wordpress",
+      "Divi",
+      "Woocommerce",
+      "Theme Customization",
+      "Custom PLugin",
+      "Infinityfree-hosting",
     ],
+    category: "Wordpress Website",
+    webapp: "https://batabd.free.nf",
   },
   {
     id: 3,
-    title: "Buckoid",
-    date: "Dec 2021 - Apr 2022",
+    title: "Notes Application",
+    date: "June 2024 - November 2024",
     description:
-      "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
-    image:
-      "https://camo.githubusercontent.com/3ad28aa710d18525f1fc87de056ed53c706d09979589bfd5a773df36653bad38/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
-    tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
+      "Built a mobile notes application using Android Studio with Firebase integration for real-time database and authentication. Users can securely register, log in, and perform full CRUD (Create, Read, Update, Delete) operations on their personal notes. Firebase Authentication ensures secure access, while the real-time database enables instant data sync across sessions. The app features a clean UI,random colored note card and smooth user experience on Android devices.",
+    image: "./images/photo_2025-07-09_13-05-12.jpg",
+    tags: ["Java", "Android Studio", "Firebase Auth", "Firebase Database"],
     category: "android app",
-    github: "https://github.com/rishavchanda/Buckoid-Android-App",
-    webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+    github: "https://github.com/CodingABoveHEAd/Mobile-Notes-App",
   },
-  {
-    id: 10,
-    title: "Job Finding App",
-    date: "Jun 2023 - Jul 2023",
-    description:
-      "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-    tags: ["React Native", "JavaScript", "Axios"],
-    category: "android app",
-    github: "https://github.com/rishavchanda/Job-finder-App",
-    webapp: "https://github.com/rishavchanda/Job-finder-App",
-  },
-  {
-    id: 4,
-    title: "Whatsapp Clone",
-    date: "Jul 2021",
-    description:
-      "A WhatsApp clone made with React JS, Firebase, and Material UI. It has Phone Authentication, Real-time Database. It has a chat room where users can chat with each other. It has a sidebar where users can see all the chat rooms and can create a new chat room. It has a login page where users can log in with their Google account.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-rishav.appspot.com/o/Screenshot%20(151).png?alt=media&token=48391593-1ef0-4a8c-a92a-eb82bdf38e89",
-    tags: ["React Js", "Firebase", "Firestore", "Node JS"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Whatsapp-Clone-React-Js",
-    webapp: "https://whatsapp-clone-rishav.web.app",
-  },
-  {
-    id: 5,
-    title: "Todo Web App",
-    date: "Jun 2021",
-    description:
-      " A Todo Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
-    image:
-      "https://camo.githubusercontent.com/84ac6ab6f378348ef28d8184062b7e9e3511a1252ae3966eaa49e8e998f732a7/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f74253230283938292e706e673f616c743d6d6564696126746f6b656e3d33643335646366322d626666322d343730382d393031632d343232383866383332386633",
-    tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Todo-Web-App",
-    webapp: "https://rishav-react-todo.netlify.app/",
-  },
-  {
-    id: 6,
-    title: "Breaking Bad",
-    date: "Jun 2021",
-    description:
-      "A simple react app that shows the characters of the famous TV series Breaking Bad. It uses the Breaking Bad API to fetch the data. It also has a search bar to search for a particular character.",
-    image:
-      "https://camo.githubusercontent.com/937774368308a82419f53dd6eeb4a8675780e119636488b4e3cfe5d34859a72a/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f7425323028313534292e706e673f616c743d6d6564696126746f6b656e3d65613439383630632d303435362d343333342d616435372d336239346663303333363263",
-    tags: ["React Js", "API", "Axios", "Node JS"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Breaking-Bad",
-    webapp: "https://breaking-bad-webapp.netlify.app",
-  },
-  {
-    id: 7,
-    title: "Quiz App",
-    date: "Dec 2020 - Jan 2021",
-    description:
-      "A android quiz app made with Java and Firebase. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the quiz categories and can create a new quiz. It has a leaderboard where users can see the top 10 scorers. It has a search bar where users can search for a particular quiz.",
-    image:
-      "https://github-production-user-asset-6210df.s3.amazonaws.com/64485885/239726262-c1b061d1-d9d0-42ef-9f1c-0412d14bc4f6.gif",
-    tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
-    category: "android app",
-    github: "https://github.com/rishavchanda/Quiz-Earn",
-    webapp: "https://github.com/rishavchanda/Quiz-Earn",
-  },
+
   {
     id: 8,
-    title: "Face Recognition",
-    date: "Jan 2021",
+    title: "AccessoryBD Website using CMS",
+    date: "May 2025",
     description:
-      "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
+      "Developed a modern eCommerce website using WordPress and the Divi theme to sell gadgets like mobiles, laptops, headphones, and other accessories. Designed custom product pages, responsive layouts, and integrated WooCommerce for secure payments and inventory management. Features include category-based navigation, search and filter options, and a clean, user-friendly interface optimized for all devices.",
+    image: "./images/Screenshot 2025-07-09 124131.png",
+    tags: [
+      "Wordpress",
+      "Divi",
+      "Woocommerce",
+      "Theme Customization",
+      "Custom PLugin",
+      "Infinityfree-hosting",
+    ],
+    category: "Wordpress Website",
+    webapp: "https://accessorybd.free.nf/",
+  },
+
+  {
+    id: 13,
+    title: "Numerical Method Calculator",
+    date: "February 2025",
+    description:
+      "Developed a Numerical Method Calculator as part of the Numerical Methods Lab to solve equations using techniques like Bisection, Newton-Raphson, Gauss Elimination, and more. The application allows step-by-step input, computation, and output of results for various numerical algorithms. Designed to enhance accuracy, efficiency, and understanding of core numerical analysis concepts.",
+    //"Built a mobile notes application using Android Studio with Firebase integration for real-time database and authentication. Users can securely register, log in, and perform full CRUD (Create, Read, Update, Delete) operations on their personal notes. Firebase Authentication ensures secure access, while the real-time database enables instant data sync across sessions. The app features a clean UI,random colored note card and smooth user experience on Android devices.",
     image:
-      "https://dontrepeatyourself.org/media/face-recognition-with-python-dlib-and-deep-learning_cezKZBj.png",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-    category: "machine learning",
-    github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-    webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+      "https://ocw.mit.edu/courses/22-15-essential-numerical-methods-fall-2014/b43308e0545888f146ccb4324e2cbec8_22-15f14.jpg",
+    tags: ["C", "C++"],
+    category: "Academic Projects",
+    github: "https://github.com/CodingABoveHEAd/Numerical_Methods_calculator",
+  },
+
+  {
+    id: 14,
+    title: "Digital Clock Project",
+    date: "November 2023",
+    description:
+      "Designed and implemented a digital clock circuit in Logisim with modified logic to skip the 59th second while maintaining standard clock functionality. The project involved creating counters, multiplexers, and display units with custom control logic to handle time progression accurately. This project deepened understanding of digital circuit design, timing logic, and simulation using Logisim.",
+
+    image: "./images/Screenshot 2025-07-09 132749.png",
+    tags: ["Logisim", "Gates", "Semiconductor"],
+    category: "Academic Projects",
+    github: "https://github.com/CodingABoveHEAd/Digital-Clock-Project",
+  },
+
+  {
+    id: 15,
+    title: "24 bit CPU design",
+    date: "September 2024",
+    description:
+      // "Designed and implemented a digital clock circuit in Logisim with modified logic to skip the 59th second while maintaining standard clock functionality. The project involved creating counters, multiplexers, and display units with custom control logic to handle time progression accurately. This project deepened understanding of digital circuit design, timing logic, and simulation using Logisim.",
+      "Designed and simulated a 24-bit custom CPU using Logisim, implementing fundamental components such as ALU, control unit, registers, instruction decoder, and memory units. The CPU supports basic instruction execution including arithmetic, logic, load/store, and branching operations. This project enhanced my understanding of computer architecture, instruction cycles, and low-level hardware logic through practical circuit design.",
+
+    image: "./images/Screenshot 2025-07-09 133602.png",
+    tags: ["Logisim", "Gates", "Semiconductor"],
+    category: "Academic Projects",
+    github: "https://github.com/CodingABoveHEAd/A-24-bit-CPU",
   },
 ];
 

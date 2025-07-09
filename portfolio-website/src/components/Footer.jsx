@@ -132,13 +132,6 @@ const Footer = () => {
             <WhatsApp />
           </SocialMediaIcon>
           <SocialMediaIcon
-            href={Bio.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LinkedIn />
-          </SocialMediaIcon>
-          <SocialMediaIcon
             href={Bio.insta}
             target="_blank"
             rel="noopener noreferrer"
