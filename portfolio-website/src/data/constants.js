@@ -126,10 +126,6 @@ export const skills = [
         image:
           "https://pbs.twimg.com/profile_images/1735429515541938176/zOO1N7Su_400x400.jpg",
       },
-      {
-        name: "Firebase",
-        image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
-      },
     ],
   },
 
