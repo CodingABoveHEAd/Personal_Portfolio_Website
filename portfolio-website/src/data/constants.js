@@ -478,7 +478,7 @@ export const projects = [
     tags: ["React Js", "Three Js", "Motion Js", "Email Js", "Render"],
     category: "web app",
     github: "https://github.com/CodingABoveHEAd/Personal_Portfolio_Website",
-    webapp: "https://vexa-app.netlify.app/",
+    webapp: "https://niloy2107117.netlify.app/",
   },
   {
     id: 2,
