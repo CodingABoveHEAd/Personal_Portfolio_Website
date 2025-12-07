@@ -594,6 +594,19 @@ export const projects = [
     github: "https://github.com/CodingABoveHEAd/kuet-crime-management-system.git",
   },
 
+    {
+    id: 18,
+    title: "KUET Ambulance",
+    date: "October 2025",
+    description:
+     "Build a KUET-based Ambulance Service System website using PHP,MySql and other libraries/modules",
+    image: "./images/KUET-Medical.png",
+    tags: ["Frontend", "Backend","Teamwork","PHP","MySql"],
+    category: "Academic Projects",
+    github: "https://github.com/CodingABoveHEAd/KUET-ambulance.git",
+  },
+
+
 ];
 
 export const TimeLineData = [
