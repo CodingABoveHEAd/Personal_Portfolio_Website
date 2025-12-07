@@ -576,7 +576,7 @@ export const projects = [
     date: "August 2025",
     description:
      "Designed a dynamic Portfolio website using ASP.net and MySql",
-    image: "./images/protfolio2.png",
+    image: "./images/portfolio2.png",
     tags: ["Frontend", "Backend", "Dynamic Portfolio","ASP.NET"],
     category: "Academic Projects",
     github: "https://github.com/CodingABoveHEAd/Personal_Portfolio-asp.net.git",
