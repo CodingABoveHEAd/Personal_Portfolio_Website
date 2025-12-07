@@ -582,6 +582,18 @@ export const projects = [
     github: "https://github.com/CodingABoveHEAd/Personal_Portfolio-asp.net.git",
   },
 
+      {
+    id: 17,
+    title: "KUET Detectives",
+    date: "September 2025 - October 2025",
+    description:
+     "Build a KUET-based realtime Crime management website using React.js,Express.js,Mongodb and other libraries/modules",
+    image: "./images/KUET-Crime.png",
+    tags: ["Frontend", "Backend","MERN"],
+    category: "Academic Projects",
+    github: "https://github.com/CodingABoveHEAd/kuet-crime-management-system.git",
+  },
+
 ];
 
 export const TimeLineData = [
